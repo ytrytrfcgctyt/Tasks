@@ -1080,6 +1080,7 @@ class Home extends StatelessWidget {
                                                     data['acountmoveto'],
                                                   ),
                                                   data['datt'],
+                                                  formatAny(data['reblec']),
                                                 );
                                               },
                                               onToggleDetails: () =>
@@ -1300,7 +1301,15 @@ class Home extends StatelessWidget {
                                                 size: 18,
                                                 color: Colors.white,
                                               ),
-                                              Text(mycontroller.blOuDs.value),
+                                              Text(
+                                                mycontroller.blOuDs.value,
+                                                style: TextStyle(
+                                                  fontFamily: 'Cairo',
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      Appcoloros.bakgroundDark2,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                           Row(
@@ -1309,7 +1318,14 @@ class Home extends StatelessWidget {
                                                 Icons.arrow_downward,
                                                 size: 18,
                                               ),
-                                              Text(mycontroller.blinDs.value),
+                                              Text(
+                                                mycontroller.blinDs.value,
+                                                style: TextStyle(
+                                                  fontFamily: 'Cairo',
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Appcoloros.appbarcolor,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ],
@@ -1344,7 +1360,15 @@ class Home extends StatelessWidget {
                                                 size: 18,
                                                 color: Colors.white,
                                               ),
-                                              Text(mycontroller.blOUss.value),
+                                              Text(
+                                                mycontroller.blOUss.value,
+                                                style: TextStyle(
+                                                  fontFamily: 'Cairo',
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      Appcoloros.bakgroundDark2,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                           Row(
@@ -1353,7 +1377,14 @@ class Home extends StatelessWidget {
                                                 Icons.arrow_downward,
                                                 size: 18,
                                               ),
-                                              Text(mycontroller.blinUss.value),
+                                              Text(
+                                                mycontroller.blinUss.value,
+                                                style: TextStyle(
+                                                  fontFamily: 'Cairo',
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Appcoloros.appbarcolor,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ],
@@ -1439,15 +1470,15 @@ class Home extends StatelessWidget {
                                 itemBuilder: (context, index) {
                                   var data = mycontroller.blancList[index];
                                   return Cardblans(
-                                    typ: data['typ'],
+                                    typ: data['typ'].toString(),
                                     aco: data['blanc'],
                                     dat: data['datt'],
                                     noo: data['noott'],
                                     ddt: data['datile'],
-                                    idx: data['id_ex'],
+                                    idx: data['id_ex'].toString(),
                                     delet: () async {
                                       await mycontroller.deletBluanc(
-                                        data['idbl'],
+                                        data['idbl'].toString(),
                                       );
                                     },
                                   );

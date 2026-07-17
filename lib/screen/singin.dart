@@ -1,3 +1,4 @@
+import 'package:taskes/constant/app/appcoloros.dart';
 import 'package:taskes/constant/routscreen/routimge.dart';
 import 'package:taskes/constant/routscreen/routname.dart';
 import 'package:taskes/constant/routscreen/svgimgrou.dart';
@@ -20,10 +21,11 @@ class Singin extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(Routimge.bakground),
-                fit: BoxFit.cover,
-              ),
+              color: Appcoloros.bakgroundDark2,
+              // image: DecorationImage(
+              //   image: AssetImage(Routimge.bakground),
+              //   fit: BoxFit.cover,
+              // ),
             ),
           ),
           Column(
@@ -37,21 +39,41 @@ class Singin extends StatelessWidget {
                       children: [
                         Text(
                           "أهلاً بك",
-                          style: TextStyle(color: Colors.white, fontSize: 50),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 50,
+                            fontFamily: 'Cairo',
+                          ),
                         ),
                         SizedBox(height: 50),
                         Container(
-                          width: 350,
-                          // height: 450,
+                          width: 250,
                           padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Appcoloros.bakgroundDark2,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                // ignore: deprecated_member_use
+                                color: Colors.orange,
+                                blurRadius: 10,
+                                spreadRadius: 2,
+                                offset: const Offset(2, 2),
+                              ),
+                            ],
+                          ),
                           // color: Colors.red,
                           child: Column(
                             children: [
                               Text(
                                 'تسجيل الدخول',
-                                style: TextStyle(fontSize: 30),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontFamily: 'Cairo',
+                                ),
                               ),
-                              SizedBox(height: 20),
+                              SizedBox(height: 35),
                               SizedBox(
                                 height: 40,
                                 width: 200,
@@ -84,7 +106,7 @@ class Singin extends StatelessWidget {
                                   readonly: false,
                                 ),
                               ),
-                              SizedBox(height: 20),
+                              SizedBox(height: 50),
                               SizedBox(
                                 height: 50,
                                 width: 150,
@@ -104,6 +126,7 @@ class Singin extends StatelessWidget {
                                   },
                                 ),
                               ),
+                              SizedBox(height: 50),
                             ],
                           ),
                         ),

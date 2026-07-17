@@ -15,7 +15,15 @@ void addBLAce(BuildContext context) {
   final mycontroller = Get.find<Homecontroller>();
   myDateUtils.setTodayDateOnly(mycontroller.blancdatt);
   Formapp.show(
-    title: Text('حركة رصيد'),
+    title: Text(
+      'حركة رصيد',
+      style: TextStyle(
+        fontFamily: 'Cairo',
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Appcoloros.appbarcolor,
+      ),
+    ),
     children: [
       Responsive(
         mobile: Column(

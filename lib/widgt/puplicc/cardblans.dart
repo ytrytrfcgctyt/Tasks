@@ -119,7 +119,7 @@ class Cardblans extends StatelessWidget {
                   _buildActionIcon(Icons.delete, Colors.red[300]!, () {
                     dilogDELETE(
                       context,
-                      'حذف كرة رصيد',
+                      'حذف حركة رصيد',
                       'سوف يتم حذف حركة الرصيد. اذا كنت متأكد من عملية الحذف اضغط حذف',
                       delet,
                     );

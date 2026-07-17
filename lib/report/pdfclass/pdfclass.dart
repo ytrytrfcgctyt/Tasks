@@ -14,7 +14,7 @@ import 'package:url_launcher/url_launcher.dart';
 class PdfTableData {
   final String tableName;
   final List<String> headers;
-  final List<List<String>> rows;
+  final List<List<dynamic>> rows; // تغيير من String إلى dynamic
 
   PdfTableData({
     required this.tableName,
@@ -69,45 +69,114 @@ class PdfService {
                       style: pw.TextStyle(fontSize: 12),
                     ),
                     // pw.SizedBox(height: 10),
-                    pw.TableHelper.fromTextArray(
-                      headers: tableData.headers,
-                      data: tableData.rows,
+                    // pw.TableHelper.fromTextArray(
+                    //   headers: tableData.headers,
+                    //   data: tableData.rows,
+                    //   border: pw.TableBorder.all(
+                    //     color: PdfColors.grey300,
+                    //     width: 0.5,
+                    //   ),
+                    //   headerStyle: pw.TextStyle(
+                    //     fontSize: 11,
+                    //     font: arabicFont,
+                    //     fontWeight: pw.FontWeight.bold,
+                    //     color: PdfColors.white,
+                    //   ),
+                    //   headerDecoration: const pw.BoxDecoration(
+                    //     color: PdfColors.black,
+                    //   ),
+                    //   cellStyle: pw.TextStyle(
+                    //     fontSize: 10,
+                    //     font: arabicFont,
+                    //     color: PdfColors.black,
+                    //   ),
+                    //   cellAlignment: pw.Alignment.centerRight,
+                    //   rowDecoration: const pw.BoxDecoration(
+                    //     border: pw.Border(
+                    //       bottom: pw.BorderSide(
+                    //         color: PdfColors.grey300,
+                    //         width: 0.5,
+                    //       ),
+                    //     ),
+                    //   ),
+                    //   oddRowDecoration: const pw.BoxDecoration(
+                    //     color: PdfColors.grey100,
+                    //   ),
+                    //   columnWidths: {
+                    //     0: const pw.FlexColumnWidth(0.30),
+                    //     1: const pw.FlexColumnWidth(0.60),
+                    //     2: const pw.FlexColumnWidth(0.10),
+                    //   },
+                    //   tableDirection: pw.TextDirection.rtl,
+                    // ),
+                    pw.Table(
                       border: pw.TableBorder.all(
                         color: PdfColors.grey300,
                         width: 0.5,
-                      ),
-                      headerStyle: pw.TextStyle(
-                        fontSize: 11,
-                        font: arabicFont,
-                        fontWeight: pw.FontWeight.bold,
-                        color: PdfColors.white,
-                      ),
-                      headerDecoration: const pw.BoxDecoration(
-                        color: PdfColors.black,
-                      ),
-                      cellStyle: pw.TextStyle(
-                        fontSize: 10,
-                        font: arabicFont,
-                        color: PdfColors.black,
-                      ),
-                      cellAlignment: pw.Alignment.centerRight,
-                      rowDecoration: const pw.BoxDecoration(
-                        border: pw.Border(
-                          bottom: pw.BorderSide(
-                            color: PdfColors.grey300,
-                            width: 0.5,
-                          ),
-                        ),
-                      ),
-                      oddRowDecoration: const pw.BoxDecoration(
-                        color: PdfColors.grey100,
                       ),
                       columnWidths: {
                         0: const pw.FlexColumnWidth(0.30),
                         1: const pw.FlexColumnWidth(0.60),
                         2: const pw.FlexColumnWidth(0.10),
                       },
-                      tableDirection: pw.TextDirection.rtl,
+                      children: [
+                        // الهيدر
+                        pw.TableRow(
+                          decoration: const pw.BoxDecoration(
+                            color: PdfColors.black,
+                          ),
+                          children: tableData.headers
+                              .map(
+                                (h) => pw.Padding(
+                                  padding: const pw.EdgeInsets.all(5),
+                                  child: pw.Text(
+                                    h,
+                                    style: pw.TextStyle(
+                                      fontSize: 11,
+                                      font: arabicFont,
+                                      fontWeight: pw.FontWeight.bold,
+                                      color: PdfColors.white,
+                                    ),
+                                    textAlign: pw.TextAlign.center,
+                                  ),
+                                ),
+                              )
+                              .toList(),
+                        ),
+                        // الصفوف
+                        ...tableData.rows
+                            .asMap()
+                            .map((index, row) {
+                              return MapEntry(
+                                index,
+                                pw.TableRow(
+                                  decoration: index % 2 != 0
+                                      ? const pw.BoxDecoration(
+                                          color: PdfColors.grey100,
+                                        )
+                                      : null,
+                                  children: row.map((cell) {
+                                    return pw.Padding(
+                                      padding: const pw.EdgeInsets.all(5),
+                                      child: (cell is pw.Widget)
+                                          ? cell // إذا كان النص ملوناً أو مخصصاً (مثل الرقم 11)
+                                          : pw.Text(
+                                              cell.toString(),
+                                              style: pw.TextStyle(
+                                                fontSize: 10,
+                                                font: arabicFont,
+                                                color: PdfColors.black,
+                                              ),
+                                              textAlign: pw.TextAlign.right,
+                                            ),
+                                    );
+                                  }).toList(),
+                                ),
+                              );
+                            })
+                            .values
+                            .toList(),
+                      ],
                     ),
                     // pw.SizedBox(height: 20),
                   ],

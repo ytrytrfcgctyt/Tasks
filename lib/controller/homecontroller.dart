@@ -729,7 +729,7 @@ class Homecontroller extends GetxController {
     try {
       var response = await funserver.summBlance();
       if (response['status'] == "success") {
-        var sums = response['sums'];
+        var sums = response['data'];
         blinD = double.tryParse(sums['out_1'].toString()) ?? 0;
         blOuD = double.tryParse(sums['in_1'].toString()) ?? 0;
         blinUs = double.tryParse(sums['out_2'].toString()) ?? 0;
@@ -739,9 +739,9 @@ class Homecontroller extends GetxController {
         blinDs.value = formatAny(blinD);
         blOuDs.value = formatAny(blOuD);
         blFDs.value = formatAny(blFD);
-        blinUss.value = formatAny(blinUs);
-        blOUss.value = formatAny(blOUs);
-        blFUs.value = formatAny(blFU);
+        blinUss.value = formatAny(blinUs, type: 2);
+        blOUss.value = formatAny(blOUs, type: 2);
+        blFUs.value = formatAny(blFU, type: 2);
         update();
         statusrequst = Statusrequst.success;
       } else {
@@ -802,35 +802,29 @@ class Homecontroller extends GetxController {
     String moveTrans,
     String aconutTrans,
     String mydate,
+    String rebls,
   ) async {
-    final bytes = await rootBundle.load(Routimge.barcodwhats);
-    final imageBytes = bytes.buffer.asUint8List();
-    final pdfBarcodeImg = pw.MemoryImage(imageBytes);
-
-    final bytes2 = await rootBundle.load(Routimge.picture2);
-    final imageBytes2 = bytes2.buffer.asUint8List();
-    final mypicture2 = pw.MemoryImage(imageBytes2);
-
-    final bytes3 = await rootBundle.load(Routimge.picture3);
-    final imageBytes3 = bytes3.buffer.asUint8List();
-    final mypicture3 = pw.MemoryImage(imageBytes3);
-
     final reshaper = ArabicReshaper();
     final fontData = await rootBundle.load("assets/fonts/Cairo-Black.ttf");
     final arabicFont = pw.Font.ttf(fontData); // الآن هو معرف في هذه الدالة
 
-    final List<List<String>> invoiceRows = [
-      [a1, 'مناولة السيارات الجانب السورى', '1'],
-      [a2, 'رسوم جمركية والامانات الضريبية', '2'],
-      [a3, 'الجباية', '3'],
-      [a4, 'صحة', '4'],
-      [a5, 'مصاريف معاملة', '5'],
-      [a6, 'فحص', '6'],
-      [a7, 'اشعاع', '7'],
-      [a8, 'مصاريف اخرى', '8'],
-      [a9, 'أجور شركة التخليص', '9'],
-      [aconutTrans, 'أجور نقل $moveTrans', '10'],
-      [suum, 'المجمــوع الكلـــــي', ''],
+    final List<List<pw.Widget>> invoiceRows = [
+      [pw.Text(a1), pw.Text('مناولة السيارات الجانب السورى'), pw.Text('1')],
+      [pw.Text(a2), pw.Text('رسوم جمركية والامانات الضريبية'), pw.Text('2')],
+      [pw.Text(a3), pw.Text('الجباية'), pw.Text('3')],
+      [pw.Text(a4), pw.Text('صحة'), pw.Text('4')],
+      [pw.Text(a5), pw.Text('مصاريف معاملة'), pw.Text('5')],
+      [pw.Text(a6), pw.Text('فحص'), pw.Text('6')],
+      [pw.Text(a7), pw.Text('اشعاع'), pw.Text('7')],
+      [pw.Text(a8), pw.Text('مصاريف اخرى'), pw.Text('8')],
+      [pw.Text(a9), pw.Text('أجور شركة التخليص'), pw.Text('9')],
+      [pw.Text(aconutTrans), pw.Text('أجور نقل $moveTrans'), pw.Text('10')],
+      [
+        pw.Text(rebls, style: pw.TextStyle(color: PdfColors.red)),
+        pw.Text('مرتجع'),
+        pw.Text('11'),
+      ],
+      [pw.Text(suum), pw.Text('المجمــوع الكلـــــي'), pw.Text('')],
     ];
     PdfService.processPdf(
       // ignore: use_build_context_synchronously
@@ -867,7 +861,7 @@ class Homecontroller extends GetxController {
                     ),
                   ],
                 ),
-                pw.Image(mypicture3, width: 150, height: 150),
+                // pw.Image(mypicture3, width: 150, height: 150),
               ],
             ),
             pw.Divider(thickness: 1),
@@ -952,11 +946,14 @@ class Homecontroller extends GetxController {
                 crossAxisAlignment:
                     pw.CrossAxisAlignment.start, // لمحاذاة النصوص لليسار
                 children: [
-                  pw.Text(
-                    'المدير المفوض',
-                    style: pw.TextStyle(
-                      fontSize: 8,
-                      fontWeight: pw.FontWeight.bold,
+                  pw.Padding(
+                    padding: pw.EdgeInsets.only(top: 20),
+                    child: pw.Text(
+                      'المدير المفوض',
+                      style: pw.TextStyle(
+                        fontSize: 8,
+                        fontWeight: pw.FontWeight.bold,
+                      ),
                     ),
                   ),
                   pw.Text('يوسف العنزى', style: pw.TextStyle(fontSize: 8)),
