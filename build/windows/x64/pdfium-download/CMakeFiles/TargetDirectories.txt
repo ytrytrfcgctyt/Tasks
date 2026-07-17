@@ -1,0 +1,3 @@
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/pdfium-download.dir
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/ALL_BUILD.dir
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/ZERO_CHECK.dir

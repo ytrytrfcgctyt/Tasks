@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-copyfile.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\eb8a2b780b314d113855a61a4e2b87d5\nuget-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\b141e0e4a11f44792cd2b65c9c6cdb77\nuget-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\775c0a4f158dc82d4fc3dcc01def35b5\nuget-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Fluterr\Takes\build\windows\x64\_deps\nuget-subbuild\CMakeFiles\nuget-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EFFC89FA-CDEB-3556-AF52-F43813A9C269}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

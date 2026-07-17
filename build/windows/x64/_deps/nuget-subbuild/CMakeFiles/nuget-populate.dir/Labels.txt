@@ -1,0 +1,15 @@
+# Target labels
+ nuget-populate
+# Source files and their labels
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/775c0a4f158dc82d4fc3dcc01def35b5/nuget-populate.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/b141e0e4a11f44792cd2b65c9c6cdb77/nuget-populate-complete.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-build.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-configure.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-copyfile.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-download.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-install.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-mkdir.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-patch.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-test.rule
+D:/Fluterr/Takes/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/eb8a2b780b314d113855a61a4e2b87d5/nuget-populate-update.rule

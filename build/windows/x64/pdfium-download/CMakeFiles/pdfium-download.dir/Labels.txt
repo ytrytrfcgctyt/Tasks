@@ -1,0 +1,14 @@
+# Target labels
+ pdfium-download
+# Source files and their labels
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/pdfium-download
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/65fc481d3b8e42c23e53f551942d2716/pdfium-download.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/62453dfa1e411a960fbab777c483105f/pdfium-download-complete.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-build.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-configure.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-download.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-install.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-mkdir.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-patch.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-test.rule
+D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-update.rule

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\1c56829a03456c745ea10876271582b3\pdfium-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\62453dfa1e411a960fbab777c483105f\pdfium-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\65fc481d3b8e42c23e53f551942d2716\pdfium-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4B609DA-8BC9-3708-9355-1F382571D8D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^D:\FLUTERR\TAKES\BUILD\WINDOWS\X64\PDFIUM-DOWNLOAD\CMAKEFILES\65FC481D3B8E42C23E53F551942D2716\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Fluterr/Takes/build/windows/x64/pdfium-download -BD:/Fluterr/Takes/build/windows/x64/pdfium-download --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Fluterr/Takes/build/windows/x64/pdfium-download/pdfium-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

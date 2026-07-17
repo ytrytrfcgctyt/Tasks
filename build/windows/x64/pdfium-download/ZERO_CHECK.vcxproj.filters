@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Fluterr\Takes\build\windows\x64\pdfium-download\CMakeFiles\65fc481d3b8e42c23e53f551942d2716\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4B609DA-8BC9-3708-9355-1F382571D8D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

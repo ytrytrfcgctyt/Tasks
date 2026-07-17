@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/pdfium-download"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/65fc481d3b8e42c23e53f551942d2716/pdfium-download.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/62453dfa1e411a960fbab777c483105f/pdfium-download-complete.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-build.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-configure.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-download.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-install.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-patch.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-test.rule"
+		},
+		{
+			"file" : "D:/Fluterr/Takes/build/windows/x64/pdfium-download/CMakeFiles/1c56829a03456c745ea10876271582b3/pdfium-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pdfium-download"
+		],
+		"name" : "pdfium-download"
+	}
+}
